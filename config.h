@@ -6,8 +6,9 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /* static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true"; */
-static char *font = "ProFontForPowerline:16:pixelsize=12:antialias=false:autohint=true";
-static int borderpx = 2;
+static char *font = "ProFontForPowerline:16:pixelsize=15:antialias=true:autohint=true";
+/* static char *font = "xos4TerminessPowerline:16:pixelsize=15:antialias=true:autohint=true"; */
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -17,7 +18,8 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+// static char *shell = "/bin/sh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -99,7 +101,7 @@ static const char *colorname[] = {
 	"#de003b", /* black */
 	"#b100de", /* red */
 	"#36ffab", /* green */
-	"#36baff", /*yellow */
+	"#36baff", /* yellow */
 	"#00a52e", /* blue */
 	"#b300e2", /* magenta */
 	"#00c9c9", /* cyan */
