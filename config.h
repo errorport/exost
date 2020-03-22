@@ -88,21 +88,21 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#230a24", /* black */
+	"#000000", /* black */
 	"#de0047", /* red */
-	"#00f0aa", /* green */
+	"#55fa55", /* green */
 	"#ff6600", /* yellow */
-	"#00c9c9", /* blue */
+	"#005bed", /* blue */
 	"#de003b", /* magenta */
 	"#36baff", /* cyan */
 	"#acc9ce", /* white */
 
 	/* 8 bright colors */
-	"#de003b", /* black */
-	"#b100de", /* red */
-	"#36ffab", /* green */
-	"#d4ff2f", /* yellow */
-	"#00a52e", /* blue */
+	"#ff1d52", /* black */
+	"#ff1d43", /* red */
+	"#a2ff16", /* green */
+	"#ffcc00", /* yellow */
+	"#3598ff", /* blue */
 	"#b300e2", /* magenta */
 	"#00c9c9", /* cyan */
 	"#acc9ce", /* white */
@@ -122,7 +122,7 @@ static const char *colorname[] = {
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
 // static unsigned int defaultcs = 256;
-static unsigned int defaultcs = 2;
+static unsigned int defaultcs = 12;
 // static unsigned int defaultrcs = 257;
 static unsigned int defaultrcs = 4;
 
@@ -153,7 +153,7 @@ static unsigned int mousebg = 0;
  * Color used to display font attributes when fontconfig selected a font which
  * doesn't match the ones requested.
  */
-static unsigned int defaultattr = 11;
+static unsigned int defaultattr = 4;
 
 /*
  * Internal mouse shortcuts.
