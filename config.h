@@ -89,22 +89,22 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"#000000", /* black */
-	"#de0047", /* red */
-	"#55fa55", /* green */
-	"#ff6600", /* yellow */
-	"#005bed", /* blue */
-	"#de003b", /* magenta */
-	"#36baff", /* cyan */
+	"#ff0033", /* red */
+	"#00ff33", /* green */
+	"#ffaa00", /* yellow */
+	"#0066ff", /* blue */
+	"#5a00ff", /* magenta */
+	"#00aedd", /* cyan */
 	"#acc9ce", /* white */
 
 	/* 8 bright colors */
-	"#ff1d52", /* black */
-	"#ff1d43", /* red */
-	"#a2ff16", /* green */
+	"#0066ff", /* black */
+	"#dd0033", /* red */
+	"#00ff66", /* green */
 	"#ffcc00", /* yellow */
-	"#3598ff", /* blue */
-	"#b300e2", /* magenta */
-	"#00c9c9", /* cyan */
+	"#0099ff", /* blue */
+	"#cc00ff", /* magenta */
+	"#00ffcc", /* cyan */
 	"#acc9ce", /* white */
 
 	[255] = 0,
@@ -177,6 +177,10 @@ static Shortcut shortcuts[] = {
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
+	{ TERMMOD,              XK_KP_Prior,    zoom,           {.f = +1} },
+	{ TERMMOD,              XK_KP_Next,     zoom,           {.f = -1} },
+    { TERMMOD,              XK_KP_Add,      zoom,           {.f = +1} },
+	{ TERMMOD,              XK_KP_Subtract, zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
