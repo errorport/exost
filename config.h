@@ -89,8 +89,8 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"#000000", /* black */
-	"#ff0033", /* red */
-	"#00ff33", /* green */
+	"#ff0066", /* red */
+	"#00ff66", /* green */
 	"#ffaa00", /* yellow */
 	"#0066ff", /* blue */
 	"#5a00ff", /* magenta */
@@ -99,8 +99,8 @@ static const char *colorname[] = {
 
 	/* 8 bright colors */
 	"#0066ff", /* black */
-	"#dd0033", /* red */
-	"#00ff66", /* green */
+	"#ff0033", /* red */
+	"#00ff99", /* green */
 	"#ffcc00", /* yellow */
 	"#0099ff", /* blue */
 	"#cc00ff", /* magenta */
