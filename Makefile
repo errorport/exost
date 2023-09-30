@@ -24,7 +24,7 @@ config.h:
 st.o: config.h st.h win.h
 x.o: arg.h config.h st.h win.h
 
-$(OBJ): config.h config.mk
+$(OBJ): exocolor/color_config.h config.h config.mk
 
 st: $(OBJ)
 	$(CC) -o $@ $(OBJ) $(STLDFLAGS)

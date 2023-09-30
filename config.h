@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
+#include "exocolor/color_config.h"
+
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-/* static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true"; */
 static char *font = "ProFontForPowerline:20:pixelsize=20:antialias=true:autohint=true";
-/* static char *font = "xos4TerminessPowerline:16:pixelsize=15:antialias=true:autohint=true"; */
 static int borderpx = 0;
 
 /*
@@ -88,24 +88,23 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#000000", /* black */
-	"#ff0066", /* red */
-	"#00ff66", /* green */
-	"#ffaa00", /* yellow */
-	"#0066ff", /* blue */
-	"#5a00ff", /* magenta */
-	"#00aedd", /* cyan */
-	"#acc9ce", /* white */
+	BLACK_DARK,
+	RED_DARK,
+	GREEN_DARK,
+	YELLOW_DARK,
+	BLUE_DARK,
+	MAGENTA_DARK,
+	CYAN_DARK,
+	WHITE_DARK,
 
-	/* 8 bright colors */
-	"#0066ff", /* black */
-	"#ff0033", /* red */
-	"#00ff99", /* green */
-	"#ffcc00", /* yellow */
-	"#0099ff", /* blue */
-	"#cc00ff", /* magenta */
-	"#00ffcc", /* cyan */
-	"#acc9ce", /* white */
+	BLACK_LIGHT,
+	RED_LIGHT,
+	GREEN_LIGHT,
+	YELLOW_LIGHT,
+	BLUE_LIGHT,
+	MAGENTA_LIGHT,
+	CYAN_LIGHT,
+	WHITE_LIGHT,
 
 	[255] = 0,
 
